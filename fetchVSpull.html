@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Git Fetch vs Pull</title>
+</head>
+<body>
+  <h1>Difference Between git fetch and git pull</h1>
+
+  <h2>git fetch</h2>
+  <ul>
+    <li>Gets latest changes from remote repo</li>
+    <li>Does not update your current files</li>
+    <li>Used to review changes first</li>
+  </ul>
+  <p><b>Example:</b></p>
+  <pre>
+git fetch origin
+git log origin/main
+  </pre>
+
+  <h2>git pull</h2>
+  <ul>
+    <li>Fetches and merges remote changes into your current branch</li>
+    <li>Updates your working files</li>
+    <li>May cause conflicts</li>
+  </ul>
+  <p><b>Example:</b></p>
+  <pre>
+git pull origin main
+  </pre>
+
+  <h2>Command Output</h2>
+<p>Below screenshot shows terminal output after running git fetch and git pull.</p>
+<img src="Screenshots/fetchVSpull.png" width="850" height="250">
+
+
+  <h3>Summary:</h3>
+  <p><b>Use fetch</b> to check for changes safely.<br>
+     <b>Use pull</b> to bring changes into your local code.</p>
+
+</body>
+</html>
